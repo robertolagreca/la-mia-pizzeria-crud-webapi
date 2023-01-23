@@ -1,4 +1,6 @@
-﻿namespace LaMiaPizzeriaCategoriaETagELogin.Models
+﻿using System.Text.Json.Serialization;
+
+namespace LaMiaPizzeriaCategoriaETagELogin.Models
 {
     public class Tag
     {
@@ -7,7 +9,7 @@
         public string Title { get; set; }
 
 
-
+        [JsonIgnore]
         public List<Pizza> Pizza { get; set; }
 
 
