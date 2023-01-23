@@ -41,3 +41,8 @@ body {
     margin: 5px;
     width: 20px;
 }
+
+.pizza .card-img-top {
+    height: 15vw;
+    object-fit: cover;
+}
