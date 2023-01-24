@@ -18,6 +18,12 @@ namespace LaMiaPizzeriaCategoriaETagELogin.Controllers
             {
                 List<Pizza> pizzasWebApi = db.Pizzas.Include(pizza => pizza.Tags).ToList<Pizza>();
 
+
+                //HO INSERITO JsonIgnore su modello pizza.
+                //Ma volendo posso installare Newtonsoft
+                //Scrivere qua per dirgli cosa non prendere
+                //per far in modo che Json non serializzi
+                //in un doppio ciclo
                 return Ok(pizzasWebApi);
             }
         }
